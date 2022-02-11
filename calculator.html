@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BMI calculator</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	</head>
+
+	<body>
+        <!-- header -->
+        <div class="header">
+            <h1>Calculator</h1>
+        </div>
+        <!-- navigation bar -->
+        <div class="navigation_bar">
+            <a href="index.html">Home Page</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="about.html">About us</a>
+            <img src="logo-removebg-preview-copy.png" alt="">
+        </div>
+
+		<!---------calculator----------->
+		<script type="text/javascript">
+            function BMI(){
+            var w=document.getElementById('w').value;
+            var h=document.getElementById('h').value;
+            var bmi=w/(h/100*h/100);
+            var bmio=(bmi.toFixed(2));
+        
+            document.getElementById("result").innerHTML="Your BMI is " + bmio;
+        
+            if (bmi >= 40)
+                {
+                    document.getElementById("conclusion").innerHTML="BMI Category: Very severely obese";
+                    document.getElementById("healthRisk").innerHTML="Health risk: Very high risk";
+                }
+                
+                else if (bmi >= 35 && bmi < 40)
+                {
+                    document.getElementById("conclusion").innerHTML="BMI Category: Severely obese";
+                    document.getElementById("healthRisk").innerHTML="Health risk: High risk";
+                }
+        
+                else if (bmi >= 30 && bmi < 35)
+                {
+                    document.getElementById("conclusion").innerHTML="BMI Category: Moderately obese";
+                    document.getElementById("healthRisk").innerHTML="Health risk: Medium risk";
+                }
+        
+            else if (bmi >= 25 && bmi < 30)
+                {
+                    document.getElementById("conclusion").innerHTML="BMI Category: Overweight";
+                    document.getElementById("healthRisk").innerHTML="Health risk: Enhanced risk";
+                }
+        
+            else if (bmi >= 18.5 && bmi < 25)
+                {
+                    document.getElementById("conclusion").innerHTML="BMI Category: Normal weight";
+                    document.getElementById("healthRisk").innerHTML="Health risk: Low risk";
+                }
+        
+            else
+                {
+                    document.getElementById("conclusion").innerHTML="BMI Category: Underweight";
+                    document.getElementById("healthRisk").innerHTML="Health risk: Malnutrition risk";
+                }
+            }
+        </script>
+        <br>
+        <center>
+            <section class="Calculator">
+                <h2>BMI Calculator</h2>
+                <br>
+                <p class="text">Height</p>
+                <input type="text" id="h">
+                <br><br>
+                <p class="text">Weight</p>
+                <input type="text" id="w">
+                <br><br>
+                <p id="result"></p>
+                <br>
+                <p id="conclusion"></p>
+                <br>
+                <p id="healthRisk"></p>
+                <button id="btn" onClick="BMI()">Calculate</button>
+                <br><br>
+                <p id="info">Please enter height [cm] and weight [kg]</p>
+          </section>
+        </center>
+        
+
+		<section class="footer">
+			<h4>About Us</h4>
+			<h6>All Right Reserved <i class="fa fa-copyright"></i> 2022</h6>
+			<h5>Disclaimer: <br> We will not be responsible for any loss or damage through the information obtained through this website.
+			</h5>
+			<p><br>Inilah Barisan Kita yang ikhlas berjuang siap sedia berkorban untuk ibu pertiwi <br>Andai kata kami gugur semua taburlah bunga di atas pusara</p>
+			
+			<div class="icons">
+				<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+			</div>
+			<p>Design with <i class="fa fa-heart"></i> by ASA Corporation</p>
+		</section>
+	</body>
+</html>

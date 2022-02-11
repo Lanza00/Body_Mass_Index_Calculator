@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI Calculator Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+            /* header design */
+            .header{
+                padding: 50px;
+                text-align: center;
+                background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.jpg);
+                color: white;
+            }
+            .header h1{
+                font-size: 60px;
+            }
+            /* navigation bar design */
+            .navigation_bar{
+                overflow: hidden;
+                background-color:rgb(85, 85, 85);
+            }
+            .navigation_bar a{
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            .navigation_bar a:hover{
+                background-color: rgb(255, 240, 240);
+                color: black;
+            }
+            .navigation_bar img{
+                float: right;
+                display: block;
+                width: 89px;
+            }
+            /* content */
+            .content{
+                -ms-flex: 70%;
+                flex: 70%;
+                background-color: rgb(255, 255, 255);
+                padding: 20px;
+            }
+            .content p{
+                text-align: justify;
+
+            }
+            .bmi_image img{
+                width: 50%;
+                padding: 0px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            /* food suggestion */
+            .row{
+                /* margin-top: 5%; */
+                margin-left: 20px;
+                margin-right: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .column {
+                flex-basis: 31%;
+                background-image: linear-gradient(50%);
+                background-color: peachpuff;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                padding: 15px ;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            h3{
+                text-align: center;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            /*-------footer-------*/
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <!-- header -->
+        <div class="header">
+            <h1>Body Mass Index Calculator</h1>
+        </div>
+        <!-- navigation bar -->
+        <div class="navigation_bar">
+            <a href="index.html">Home Page</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="about.html">About us</a>
+            <img src="logo-removebg-preview-copy.png" alt="">
+        </div>
+
+
+        <!-- content -->
+        <div class="content">
+            <div class="bmi_image">
+                <img src="BMI Categories.jpg">
+            </div>
+
+            <h2>What Is BMI</h2><br>
+            <p>BMI is known as <b>Body Mass Index</b>. Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres.<br><br>
+            The BMI may be determined using a table or chart which displays BMI as a function of mass and height using contour lines or colours for different BMI categories, and which may use other units of measurement (converted to metric units for the calculation)</p>   
+        </div>
+        <div class="row">
+            <div class="column" >
+                <img src="breakfast.png" alt="Alep" style="width:100%">
+                <h3>Breakfast</h3>
+                <p>Take food that  are typically high in fiber, protein, healthy fats, and micronutrients. eg. egg, yogurt oatmeal</p>
+
+            </div>
+            <div class="column">
+                <img src="lunch.png" alt="Alep" style="width:100%">
+
+                <h3>Lunch</h3>
+                <p>The recommendations on the plate encourage diversity and quality in food selections. Fill half of your plate with bright fruits and veggies, one-quarter with nutritious grains, and the final quarter with healthy proteins. A delightful lunch with healthy fats and a modest quantity of dairy that will fuel an active, healthy lifestyle.</p>
+            </div>
+            <div class="column">
+                <img src="dinner.png" alt="Alep" style="width:100%">
+                <h3>Dinner</h3>
+                <p>An ideal dinner features a balance of vegetables, protein, grains, and healthy fat. grilled salmon with quinoa and roasted vegetables, and a vegetable bowl with brown rice and tofu as prime examples. Healthy fats can be incorporated by cooking vegetables in extra-virgin olive oil or adding avocado.</p>
+            </div>
+        </div>
+
+        <section class="footer">
+			<h4>About Us</h4>
+			<h6>All Right Reserved <i class="fa fa-copyright"></i> 2022</h6>
+			<h5>Disclaimer: <br> We will not be responsible for any loss or damage through the information obtained through this website.
+			</h5>
+			<p><br>Inilah Barisan Kita yang ikhlas berjuang siap sedia berkorban untuk ibu pertiwi <br>Andai kata kami gugur semua taburlah bunga di atas pusara</p>
+			
+			<div class="icons">
+				<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+			</div>
+			<p>Design with <i class="fa fa-heart"></i> by ASA Corporation</p>
+		</section>
+    </body>
+</html>
